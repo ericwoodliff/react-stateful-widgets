@@ -29,7 +29,7 @@ STEPS 4, 5, 6:
 */
 
 import React, { useState } from 'react'; /* STEP 0 */
-import ReactDOM from "react-dom";
+
 
 const initialMood = 'Not sure how I feel';
 const happyMood = 'Quite happy!';
@@ -38,7 +38,7 @@ const sadMood = 'Rather sad';
 export default function Moods() {
   /* STEP 1 */
 
-  const [mood, setMood] = useState(makeHappy)
+  const [mood, setMood] = useState(reset)
 
   const makeHappy = () => {
     setMood(happyMood);

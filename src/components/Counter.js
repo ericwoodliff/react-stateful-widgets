@@ -47,7 +47,6 @@ STEP 6:
 */
 
 import React, { useState } from 'react'; /* STEP 0 */
-import ReactDOM from "react-dom";
 
 export default function Counter() {
   /* STEP 1 */
@@ -67,7 +66,7 @@ const [count, setCount] = useState(0);
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'royalblue',   
+    color: count % 2 ? 'crimson' : 'royalblue',   
   };
 
 
